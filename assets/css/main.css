@@ -55,8 +55,12 @@
 .title {
 	font-size: 24px;
 	font-weight: bold;
-	padding: 18px 0 12px;
+	padding: 0 0 12px;
 	width: 100%;
+}
+
+.margin-top-18 {
+	margin-top: 18px;
 }
 
 .title--medium {
@@ -73,11 +77,25 @@
 	padding-bottom: 12px;
 }
 
+.title--large {
+	font-size: 24px;
+	font-weight: bold;
+	width: 100%;
+	padding-bottom: 12px;
+}
+
 .desc {
 	font-size: 15px;
 	color: #555;
 	font-weight: bold;
 }
+
+.desc--small {
+	font-size: 14px;
+	color: #555;
+	font-weight: bold;
+}
+
 
 .content__hl {
 	margin-bottom: 18px;
@@ -91,6 +109,7 @@
 img {
 	display: block;
 	width: 100%;
+	height: 100%;
 }
 
 .content__hl-bottom {
@@ -252,13 +271,38 @@ img {
 	font-size: 18px;
 }
 
+.divider {
+	width: 100%;
+	background-color: green;
+	height: 1px;
+	margin: 24px 0;
+}
 
+.list-content__item {
+	margin-bottom: 24px;
+}
+
+.pagination {
+	display: flex;
+	justify-content: center;
+}
 /* ! CATEGORY CSS: END */
 
 
 /* ! DETAIL CSS: START */
 
+.caption-img {
+	text-align: center;
+	margin: 12px 0 24px;
+	font-style: italic;
+	color: #555;
+}
 
+.author {
+	text-align: right;
+	font-weight: 700;
+	margin: 12px;
+}
 
 /* ! DETAIL CSS: END */
 
