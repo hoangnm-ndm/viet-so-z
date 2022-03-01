@@ -17,6 +17,7 @@
 .nav-link {
 	text-transform: uppercase;
 	font-size: 16px;
+	font-weight: 700;
 }
   
 .navbar-light .navbar-brand {
@@ -40,11 +41,16 @@
 	padding: 0 12px;
 }
 
+
 /* custom bootstrap navbar: end */
 /* Header: End */
 
 
 /* ! HOME CSS: START */
+
+#content {
+	margin: 36px 0;
+}
 
 .title {
 	font-size: 24px;
@@ -71,10 +77,6 @@
 	font-size: 15px;
 	color: #555;
 	font-weight: bold;
-}
-
-.content {
-	margin-bottom: 36px;
 }
 
 .content__hl {
@@ -225,11 +227,46 @@ img {
 }
 
 
-/* responsive */
+/* ! HOME CSS: END */
+
+
+/* ! CATEGORY CSS: START */
+
+.main-navbar {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: #f1f1f1;
+	font-size: 18px;
+	padding-left: 8px;
+	border-bottom: 1px solid #ccc;
+}
+
+.main-navbar p, .main-navbar a {
+	margin: 8px 0;
+	font-size: 18px;
+}
+
+.main-navbar i {
+	padding: 0 8px;
+	font-size: 18px;
+}
+
+
+/* ! CATEGORY CSS: END */
+
+
+/* ! DETAIL CSS: START */
+
+
+
+/* ! DETAIL CSS: END */
+
+
+/* ! responsive */
 
 @media (max-width: 991px) {
 
-	
 	.content__right {
 		display: none;
 	}
@@ -241,19 +278,4 @@ img {
 	}
 } 
 
-/* ! HOME CSS: END */
-
-
-/* ! CATEGORY CSS: START */
-
-
-
-/* ! CATEGORY CSS: END */
-
-
-/* ! DETAIL CSS: START */
-
-
-
-/* ! DETAIL CSS: END */
 
