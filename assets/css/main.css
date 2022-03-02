@@ -16,15 +16,28 @@
 /* custom bootstrap navbar: start */
 .nav-link {
 	text-transform: uppercase;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 700;
+}
+
+.nav-item {
+	padding: 0 8px;
 }
   
 .navbar-light .navbar-brand {
 	text-transform: uppercase;
-	font-size: 28px;
+	font-size: 22px;
 	color: green;
 	font-weight: 700;
+}
+
+.navbar {
+	height: 100%;
+}
+
+.navbar-nav {
+	display: flex;
+	flex: wrap;
 }
   
 .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
@@ -35,10 +48,6 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
-
-.nav-item {
-	padding: 0 12px;
 }
 
 
@@ -236,6 +245,10 @@ img {
 	align-items: center;
 }
 
+.footer-bottom .footer-link {
+	padding-left: 4px;
+}
+
 .category-link {
 	color: #fff;
 }
@@ -309,8 +322,35 @@ img {
 
 /* ! responsive */
 
-@media (max-width: 991px) {
+@media (min-width: 1300px){
+	.navbar-expand-custom {
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: flex-start;
+	}
+	.navbar-expand-custom .navbar-nav {
+			flex-direction: row;
+	}
+	.navbar-expand-custom .dropdown-menu {
+			position: absolute;
+	}
+	.navbar-expand-custom .nav-link {
+			padding-right: .5rem;
+			padding-left: .5rem;
+	}
+	.navbar-expand-custom > .container {
+			flex-wrap: nowrap;
+	}
+	.navbar-expand-custom .navbar-collapse {
+			display: flex!important;
+			flex-basis: auto;
+	}
+	.navbar-expand-custom .navbar-toggler {
+			display: none;
+	}
+}
 
+@media (max-width: 991px) {
 	.content__right {
 		display: none;
 	}
@@ -320,6 +360,6 @@ img {
 	.footer__item {
 		text-align: center;
 	}
-} 
+}
 
 
